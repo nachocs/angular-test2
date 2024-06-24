@@ -1,0 +1,19 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="header">
+      <img
+        mat-card-image
+        src="{{ photo.thumbnailUrl }}"
+        alt="{{ photo.title }}"
+      />
+    </div>
+    <mat-card-title>{{ photo.title }}</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{ photo.url }}" alt="{{ photo.title }}" />
+  <mat-card-content>
+    <p>
+      {{ photo.title }}
+    </p>
+  </mat-card-content>
+</mat-card>

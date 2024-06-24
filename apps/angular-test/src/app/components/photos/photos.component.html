@@ -1,0 +1,14 @@
+<mat-paginator
+  class="paginator"
+  [length]="length"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions"
+  aria-label="Select page"
+  (page)="handlePageEvent($event)"
+>
+</mat-paginator>
+<div class="container">
+  <div *ngFor="let photo of photosShown">
+    <app-photo [photo]="photo"></app-photo>
+  </div>
+</div>
