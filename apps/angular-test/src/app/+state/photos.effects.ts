@@ -5,8 +5,6 @@ import { catchError, of, switchMap } from 'rxjs';
 import { LoadPhotosService } from '../services/load-photos.service';
 import * as PhotosActions from './photos.actions';
 
-const API_URL = 'https://jsonplaceholder.typicode.com/photos';
-
 @Injectable()
 export class PhotosEffects {
   constructor(
