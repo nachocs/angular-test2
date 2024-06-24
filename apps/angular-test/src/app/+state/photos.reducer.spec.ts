@@ -11,7 +11,9 @@ import {
 describe('Photos Reducer', () => {
   const createPhotosEntity = (id: string, name = ''): PhotosEntity => ({
     id,
-    name: name || `name-${id}`,
+    title: name || `name-${id}`,
+    url: '',
+    thumbnailUrl: '',
   });
 
   describe('valid Photos actions', () => {

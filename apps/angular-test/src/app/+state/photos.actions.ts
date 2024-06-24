@@ -3,8 +3,6 @@ import { PhotosEntity } from './photos.models';
 
 export const initPhotos = createAction('[Photos Page] Init');
 
-export const loadPhotos = createAction('[Photos Page] Load');
-
 export const loadPhotosSuccess = createAction(
   '[Photos/API] Load Photos Success',
   props<{ photos: PhotosEntity[] }>()

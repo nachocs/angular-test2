@@ -1,8 +1,8 @@
 import { PhotosEntity } from './photos.models';
 import {
-  photosAdapter,
   PhotosPartialState,
   initialPhotosState,
+  photosAdapter,
 } from './photos.reducer';
 import * as PhotosSelectors from './photos.selectors';
 
@@ -12,7 +12,7 @@ describe('Photos Selectors', () => {
   const createPhotosEntity = (id: string, name = '') =>
     ({
       id,
-      name: name || `name-${id}`,
+      title: name || `name-${id}`,
     } as PhotosEntity);
 
   let state: PhotosPartialState;
