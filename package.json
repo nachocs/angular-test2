@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "nx run angular-test:serve:development",
     "start:angular-test": "nx run angular-test:serve:development",
     "test:angular-test": "nx run angular-test:test",
     "lint:angular-test": "nx run angular-test:lint",

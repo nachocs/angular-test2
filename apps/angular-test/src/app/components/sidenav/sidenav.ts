@@ -23,7 +23,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 export class SidenavComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({ length: 10 }, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = ['Home', 'About'];
 
   private _mobileQueryListener: () => void;
 

@@ -1,14 +1,21 @@
-<mat-paginator
-  class="paginator"
-  [length]="length"
-  [pageSize]="pageSize"
-  [pageSizeOptions]="pageSizeOptions"
-  aria-label="Select page"
-  (page)="handlePageEvent($event)"
->
-</mat-paginator>
 <div class="container">
-  <div *ngFor="let photo of photosShown">
-    <app-photo [photo]="photo"></app-photo>
+  <div class="view">
+  <cdk-virtual-scroll-viewport
+    appendOnly
+    itemSize="50"
+    class="example-viewport"
+  >
+    <div *cdkVirtualFor="let photo of photos" class="example-item">
+      <app-photo [photo]="photo"></app-photo>
+    </div>
+  </cdk-virtual-scroll-viewport>
+  <div class="submit">
+    <form [formGroup]="submitForm" (ngSubmit)="onSubmit()">
+      <mat-form-field  class="example-full-width">
+        <input matInput formControlName="message" placeholder="Type your message..." />
+      </mat-form-field>
+      <button mat-flat-button>Send</button>
+    </form>
+  </div>
   </div>
 </div>

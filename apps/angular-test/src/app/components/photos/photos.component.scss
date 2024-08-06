@@ -2,6 +2,30 @@
   width: 600px;
 }
 
-.container{
-    height: 600px
+.container {
+  height: 700px;
+}
+
+.example-viewport {
+  height: 600px;
+  width: 500px;
+}
+
+.example-item {
+  min-height: 50px;
+}
+
+.view {
+  height: 700px;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.example-full-width {
+  width: 350px;
+}
+.submit {
+  margin: 12px auto;
+  width: 450px;
 }

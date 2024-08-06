@@ -1,14 +1,32 @@
-.example-card {
-  max-width: 400px;
+.user-card {
   border-radius: 5px;
-  float: left;
-  margin: 10px
+  margin: 10px;
+  text-align: right;
+}
+.bot-card {
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .header {
-    max-width: 40px;
+  max-width: 40px;
 }
 
 .header img {
-    max-width: 40px;
+  max-width: 40px;
+}
+
+.user-view {
+  color: white;
+  background-color: black;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.bot-view {
+  color: black;
+  background-color: lightgray;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 1rem;
 }
